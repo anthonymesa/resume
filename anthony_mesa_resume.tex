@@ -1,0 +1,234 @@
+\documentclass [11pt]{article}
+
+\usepackage{longtable}
+\usepackage{colortbl}
+\usepackage{xcolor}
+
+\setlength{\textwidth}{8.0 in}
+\setlength{\oddsidemargin}{-0.3 in}
+\setlength{\evensidemargin}{-0.15 in}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\topmargin-1.3in                          % Use 0.7 inches with 12 point font
+\textheight=11.5in
+\parindent=0pt                            % No need for \noindent
+
+\newcommand{\vs}{\vspace{1ex}}                      % Small vertical space
+\newcommand{\vsp}{\vspace{2ex}}                     % Vertical space
+\newcommand{\vspp}{\vspace{4ex}}                    % Large vertical space
+
+\newcommand{\hs}{\hspace*{1em}}                      % Small horiz. space
+\newcommand{\hsp}{\hspace*{2em}}                     % Horiz. space
+\newcommand{\hspp}{\hspace*{4em}}                    % Large horiz. space
+
+\pagestyle{empty}
+
+% document color scheme
+\definecolor{primaryColor}{rgb}{.1,.5,.5}
+\definecolor{secondaryColor}{rgb}{0,.2,.2}
+\newcommand{\columnSizePrimary}{2.5cm}
+\newcommand{\columnSizeSecondary}{14.5cm}
+
+\newenvironment{tightcenter}{%
+  \setlength\topsep{0pt}
+  \setlength\parskip{0pt}
+  \begin{center}
+}{%
+  \end{center}
+}
+
+\newenvironment{resumeHead}
+{
+\begin{tabular}{ p{18cm} }
+}{
+\end{tabular}
+}
+
+\newcommand{\name}[1]
+{
+\color{primaryColor}
+{\bf\Huge
+\begin{tightcenter}
+#1
+\end{tightcenter}
+}}
+
+\newcommand{\info}[1]
+{\color{black}
+{\large
+\begin{tightcenter}
+\textit{#1}
+\end{tightcenter}
+}}
+
+\newcommand{\jobTitle}[1]
+{{\normalsize
+\begin{tightcenter}
+\hrule \vsp{\bf #1}
+\end{tightcenter}
+}}
+
+\newcommand{\blurb}[1]
+{{\large
+#1\vs\hrule
+}}
+
+\newenvironment{resumeBody}
+{
+\begin{tabular}{>{\columncolor{secondaryColor}} p{\columnSizePrimary} | p{\columnSizeSecondary}}
+}{
+\end{tabular}
+}
+
+\newcommand{\bodyRow}[4]
+{
+\begin{tightcenter}{\bf \color{white}#1}\end{tightcenter} & {\bf \color{primaryColor} #2}\textit{#3}\newline{#4}\\
+}
+
+\newenvironment{resumeFooter}{
+\begin{tightcenter}
+}{
+\end{tightcenter}
+}
+
+\newenvironment{absolutelynopagebreak}
+  {\par\nobreak\vfil\penalty0\vfilneg
+   \vtop\bgroup}
+  {\par\xdef\tpd{\the\prevdepth}\egroup
+   \prevdepth=\tpd}
+
+\begin{document}
+\begin{absolutelynopagebreak}
+\begin{resumeHead}
+
+\name{
+ANTHONY MESA
+}
+
+\info{
+github.com/anthonymesa \hsp anthony.mesa.propst@gmail.com \hsp 843-271- 7401 \hsp Burlington NC
+}
+
+\jobTitle{
+ENTRY LEVEL SOFTWARE DEVELOPER – COMP-SCI MAJOR – MARINE CORPS VETERAN
+}
+
+\blurb{
+Seeking an internship or part-time position in a career-field centered around software development, ideally as a member of an already existing development team, with the hopes of learning and improving upon current industry-standard development practices.}
+\end{resumeHead}
+
+\begin{resumeBody}
+\bodyRow{
+EDUCATION
+}{
+University of North Carolina Greensboro:
+}{
+(2019 - Graduate in 2022)
+}{
+- Computer Science Major
+
+- 8.73 GPA, Chancellor's List
+}
+
+\bodyRow{
+SKILLS
+}{
+Languages I have experience with
+}{
+}{
+C++, Java, javascript, python, C\#, Assembly, Processing
+}
+
+\bodyRow{
+}{
+Tools I have experience with
+}{
+}{
+OpenGL, Unity, CMake, VSCode, Node.js, Nginx, PHP, Postgresql, Git, Google Cloud Engine, Blender, HTML/CSS, La-Tex
+}
+
+\bodyRow{
+PROJECTS
+}{
+Muser
+}{
+(2019 - under development)
+}{
+Software written in C++ using OpenGL and SFML that allows users to convert sculpted 3D .obj format meshes into sound that can then be played back or saved.
+
+\vsp
+
+\begin{tabular}{ | p{\columnSizeSecondary} | }\hline
+\small
+Leveraged Knowledge: Pointers, memory allocation, algorithm design, recursion, memoization, tabulation, low level 3D graphics, CMake, command line compiling, and Git\\\hline
+\end{tabular}
+}
+
+\bodyRow{
+}{
+Z-Mesh Algorithm
+}{
+}{
+Data interpolation algorithm prototyped in Processimg designed to encode 3D topology into a 2 dimensional array and then 'fill in the holes'
+}
+
+\bodyRow{}{
+MinecraftPanelBridge
+}{
+(2020 - under development)
+}{
+Node.js powered Discord bot that allows users to send Minecraft server commands directly to their live server instances through their server panel
+
+\vsp
+
+\begin{tabular}{ | p{\columnSizeSecondary} | }\hline
+\small
+Leveraged Knowledge: Node.js modules, callbacks, asynchronous functions, Nginx setup, serving PHP, PostgreSQL database management and integration with Node and PHP\\\hline
+\end{tabular}
+}
+
+\bodyRow{
+WORK
+HISTORY
+}{
+Visual Graphics Intern
+}{
+The Holt Group / Skyline Holt Exhibits and Events: High Point, NC, (2020 - present)
+}{
+- Researched and developed a custom HTML5 Unity environment walkthrough product for clients using both C\# and JavaScript
+
+- Created scripts to interact with Sketchfab API for templated placement onto client web pages
+
+- Created scripts and logic for Verge3D implementation for the development of 3D interactive environments for clients
+}
+
+\bodyRow{}{
+Senior Student Lab Manager / Lab Manager
+}{
+UNCG, Information Technology Services: Greensboro, NC, 2018 – 2020
+}{
+- Assisted users with technological tasks related to UNCG lab computer systems.
+}
+
+\bodyRow{}{
+Public Affairs Representative
+}{
+: United States Marine Corps: Japan – NC, 2013 – 2017
+}{
+- Achieved rank of E5 – Sergeant.
+
+- Separated with Honorable Discharge.
+
+- Received (1) Joint Service Achievement Medal for exemplary leadership and proficiency in occupational specialty
+
+}
+
+\end{resumeBody}
+\begin{resumeFooter}
+
+
+
+\end{resumeFooter}
+\end{absolutelynopagebreak}
+\end{document}
