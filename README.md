@@ -1,5 +1,5 @@
-### Anthony Mesa
-###### (843) 271-7401 | admesa@pm.me | github.com/anthonymesa
+# ANTHONY MESA
+## (843) 271-7401 | admesa@pm.me | github.com/anthonymesa
 ##### Software engineer and Marine Corps Veteran seeking part-time position with a mature software development team.
 
 #### Education  
