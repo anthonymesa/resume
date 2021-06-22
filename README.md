@@ -29,15 +29,15 @@
 - ##### Miscelaneous
   - Developed a bare-bones chat server using C as an academic project. Worked with managing memory, debugging memory issues using Valgrind & GDB, and threading. 
   - Developed various Sketchfab API integrations powered by Javascript.
-  - Developing a "Minecraft command pass-through" Discord bot leveraging enterprise API's, Postgresql, Nginx, and PHP. Originally developed with Javascript and Node.js.
+  - Developed a "Minecraft command pass-through" Discord bot leveraging enterprise API's, Java, and PHP.
 
 #### Employment
-- ##### Virtual Experience Engineer, Holt Environments, High Point, NC ()
+- ##### Virtual Experience Engineer, Holt Environments, High Point, NC (August 2020 - Current)
   - Responsible for creating client-facing virtual experiences using 3D modeling and rendering softwares in conjunction with web-based 3D platforms.
   - Modelled, textured, assembled, and rendered panoramic 3D scenes.
-  - Used Javascript to create interactive 3D content.
+  - Employed Javascript to create interactive 3D content.
 
-- ##### Digital Broadcast Specialist, United States Marine Corps ()
+- ##### Digital Broadcast Specialist, United States Marine Corps (2013 - 2017)
   - Achieved rank of E5 (Sergeant)
   - Seperated with Honorable Discharge
   - Recieved (1) Joint Service Achievment Medal for exemplary leadership and proficiency in occupational specialty.
